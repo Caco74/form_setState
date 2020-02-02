@@ -50,30 +50,29 @@ class App extends React.Component {
       );
 
     return (
-      <div className="container login" style={{textAlign: 'center'}}>
-        <h2>Registro de Usuario</h2>
-        <form method="post" action="#" className="col-sm-12">
-
-          <div className="form-group">
-            <label className="control-label col-sm-2" style={{backgroundColor: '#7644'}}><span>Nombre Completo</span></label>
+      <div className="container login col-lg-12" style={{textAlign: 'center'}}>
+        <h2>Registro de Usuario</h2><br></br>
+        <form method="post" action="#" className="col-lg-4 offset-lg-4 ">
+          <div className="input-group">
+            <span className="input-group-text fa fa-user"></span>
             <input id="nombreCompleto" className="form-control" type="text" placeholder="Nombre Completo de usuario"/>
-          </div>
-          <div className="form-group">
-            <label className="control-label col-sm-2" style={{backgroundColor: '#7644'}}><span>Correo Electrónico</span></label>
+          </div><br></br>
+          <div className="input-group">
+            <span className="input-group-text fa fa-envelope"></span>
             <input id="correo" className="form-control" type="text" placeholder="Correo Electrónico"/>
-          </div>
-          <div className="form-group">
-            <label className="control-label col-sm-2" style={{backgroundColor: '#7644'}}><span>Nombre de Usuario</span></label>
+          </div><br></br>
+          <div className="input-group">
+            <span className="input-group-text fa fa-user-secret"></span>
             <input id="nombreUsuario" className="form-control" type="text" placeholder="Nombre de usuario"/>
-          </div>
-          <div className="form-group">
-            <label className="control-label col-sm-2" style={{backgroundColor: '#7644'}}><span>Contraseña</span></label>
+          </div><br></br>
+          <div className="input-group">
+            <span className="input-group-text fa fa-lock"></span>
             <input id="contraseña" className="form-control" type="password" placeholder="Contraseña"/>
-          </div>
-          <div className="form-group">
-            <label className="control-label col-sm-2" style={{backgroundColor: '#7644'}}><span>Repite la Contraseña</span></label>
+          </div><br></br>
+          <div className="input-group">
+            <span className="input-group-text fa fa-lock"></span>
             <input id="contraseñaRepite" className="form-control" type="password" placeholder="Repite la Contraseña"/>
-          </div>
+          </div><br></br>
           <div className='btn-group pb-3'>
             <button type="button" class="btn btn-primary btn-lg btn-block login-button"
               onClick={this.registrar}>
